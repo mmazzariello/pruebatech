@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+.background-nav {
+  background-color: #92d2d9;
+}
+
 * {
   box-sizing: border-box;
 }
