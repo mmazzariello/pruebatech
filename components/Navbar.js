@@ -1,7 +1,4 @@
 const Navbar = () => {
-  const activeClassName = "text-gray-300";
-  const active = "activeNav";
-
   return (
     <div className="p-2 background-nav">
       <ul className="flex flex-row text-white list-none text-xs px-12">
