@@ -1,6 +1,9 @@
 const Navbar = () => {
   return (
-    <div className="p-2 background-nav">
+    <div
+      display={["none", "none", "block", "block"]}
+      className="p-2 background-nav"
+    >
       <ul className="flex flex-row text-white list-none text-xs px-12">
         <li className="pr-6">SAFETY</li>
         <li className="pr-6">JANITORIAL</li>
