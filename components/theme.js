@@ -5,6 +5,9 @@ const colors = {
   backgroundGray: {
     50: "#F9F9FB",
   },
+  mediumGray: {
+    50: "#C4C4C4",
+  },
   orangeBrand: {
     100: "#FF723D",
   },

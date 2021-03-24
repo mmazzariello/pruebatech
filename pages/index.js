@@ -4,8 +4,8 @@ import Topnav from "./../components/Topnav";
 import { Box } from "@chakra-ui/react";
 import { Button } from "@chakra-ui/react";
 import { ButtonGroup } from "@chakra-ui/react";
-
 import { Text } from "@chakra-ui/react";
+import { Input } from "@chakra-ui/react";
 import { CategoryBox } from "components/CategoryBox";
 
 export default function Home() {
@@ -16,8 +16,12 @@ export default function Home() {
       </Head>
 
       <div>
-        <Topnav />
-        <Navbar />
+        <Box>
+          <Topnav />
+        </Box>
+        <Box display={["none", "none", "none", "block"]}>
+          <Navbar />
+        </Box>
       </div>
 
       <header>
@@ -33,34 +37,39 @@ export default function Home() {
       <Box>
         <Box
           // display={["none", "none", "none", "block"]}
-          paddingX="12"
-          paddingY="20"
+          paddingLeft="6"
+          paddingRight="4"
+          paddingTop="14"
+          paddingBottom="12"
           marginTop="6"
           marginBottom="3"
-          marginX={["3", "3", "20"]}
+          marginX={["5", "5", "5", "20"]}
           borderRadius="2xl"
           background="url('img/products.svg')"
         >
           <Text
             display={["block", "block", "none", "none"]}
-            color="orangeBrand"
-            fontSize="xs"
+            color="orangeBrand.100"
+            fontSize="md"
+            fontWeight="800"
           >
             MOST VIEWED CATEGORY
           </Text>
           <Text
             display={["none", "none", "block", "block"]}
-            color="orangeBrand"
-            fontSize="xs"
+            color="orangeBrand.100"
+            fontSize="md"
+            fontWeight="800"
           >
             VIEWED CATEGORY
           </Text>
 
-          <Text>Highlighted Product</Text>
-          <Text>Category</Text>
-          <Text>
+          <Text fontWeight="700" fontSize="24px" paddingTop="1">
+            Highlighted Product Category
+          </Text>
+          <Text fontWeight="400" fontSize="15px" paddingTop="2">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            euismod tempor incididunt ut labore
+            euismod
           </Text>
         </Box>
       </Box>
@@ -83,7 +92,7 @@ export default function Home() {
         display="flex"
         flexWrap="wrap"
         justifyContent="space-around"
-        marginX="20"
+        marginX={["5", "5", "20", "20"]}
         marginTop="6"
       >
         <Box
@@ -97,6 +106,7 @@ export default function Home() {
           flexDirection="column"
           justifyContent="center"
           height="70px"
+          marginTop={["2", "none", "none", "none"]}
         >
           <Text>Efficient</Text>
           <Text color="gray.400" fontSize="xx-small">
@@ -114,6 +124,7 @@ export default function Home() {
           flexDirection="column"
           justifyContent="center"
           height="70px"
+          marginTop={["2", "none", "none", "none"]}
         >
           <Text>High-Quality</Text>
           <Text color="gray.400" fontSize="xx-small">
@@ -131,6 +142,7 @@ export default function Home() {
           flexDirection="column"
           justifyContent="center"
           height="70px"
+          marginTop={["2", "none", "none", "none"]}
         >
           <Text>Reliable</Text>
           <Text color="gray.400" fontSize="xx-small">
@@ -148,6 +160,7 @@ export default function Home() {
           flexDirection="column"
           justifyContent="center"
           height="70px"
+          marginTop={["2", "none", "none", "none"]}
         >
           <Text>Global</Text>
           <Text color="gray.400" fontSize="xx-small">
@@ -165,6 +178,7 @@ export default function Home() {
           flexDirection="column"
           justifyContent="center"
           height="70px"
+          marginTop={["2", "none", "none", "none"]}
         >
           <Text>Customer Focus</Text>
           <Text color="gray.400" fontSize="xx-small">
@@ -174,7 +188,13 @@ export default function Home() {
       </Box>
 
       <Box>
-        <Text marginX="20" marginTop="10">
+        <Text
+          marginX={["5", "5", "20", "20"]}
+          marginTop="10"
+          color={["mediumGray.50", "#000000"]}
+          fontWeight="700"
+          fontSize={["18", "18", "30", "30"]}
+        >
           Blog Posts
         </Text>
 
@@ -187,53 +207,62 @@ export default function Home() {
         >
           <Box display="flex" flexDirection="column">
             <Box
-              style={{
-                background: "url('img/blog.svg')",
-                backgroundSize: "cover",
-                height: "180px",
-                maxWidth: "400px",
-                minWidth: "300px",
-                width: "32%",
-                marginTop: "4",
-              }}
+              marginX={["5", "5", "20", "20"]}
+              background="url('img/blog.svg')"
+              backgroundSize="cover"
+              height="180px"
+              maxWidth="400px"
+              minWidth="300px"
+              width="32%"
+              marginTop="4"
             ></Box>
             <Box paddingTop="4">
-              <Text marginTop="1.5">Blog Post publication 1</Text>
-              <Text>Author</Text>
+              <Text marginTop="1.5" fontWeight="700" fontSize="18px">
+                Blog Post publication 1
+              </Text>
+              <Text fontWeight="400" fontSize="14px" color="mediumGray.50">
+                Author
+              </Text>
             </Box>
           </Box>
           <Box display="flex" flexDirection="column">
             <Box
-              style={{
-                background: "url('img/blog.svg')",
-                backgroundSize: "cover",
-                height: "180px",
-                maxWidth: "400px",
-                minWidth: "300px",
-                width: "32%",
-                marginTop: "4",
-              }}
+              marginX={["5", "5", "20", "20"]}
+              background="url('img/blog.svg')"
+              backgroundSize="cover"
+              height="180px"
+              maxWidth="400px"
+              minWidth="300px"
+              width="32%"
+              marginTop="4"
             ></Box>
             <Box paddingTop="4">
-              <Text marginTop="1.5">Blog Post publication 1</Text>
-              <Text>Author</Text>
+              <Text marginTop="1.5" fontWeight="700" fontSize="18px">
+                Blog Post publication 1
+              </Text>
+              <Text fontWeight="400" fontSize="14px" color="mediumGray.50">
+                Author
+              </Text>
             </Box>
           </Box>
           <Box display="flex" flexDirection="column">
             <Box
-              style={{
-                background: "url('img/blog.svg')",
-                backgroundSize: "cover",
-                height: "180px",
-                maxWidth: "400px",
-                minWidth: "300px",
-                width: "32%",
-                marginTop: "4",
-              }}
+              marginX={["5", "5", "20", "20"]}
+              background="url('img/blog.svg')"
+              backgroundSize="cover"
+              height="180px"
+              maxWidth="400px"
+              minWidth="300px"
+              width="32%"
+              marginTop="4"
             ></Box>
             <Box paddingTop="4">
-              <Text marginTop="1.5">Blog Post publication 1</Text>
-              <Text>Author</Text>
+              <Text marginTop="1.5" fontWeight="700" fontSize="18px">
+                Blog Post publication 1
+              </Text>
+              <Text fontWeight="400" fontSize="14px" color="mediumGray.50">
+                Author
+              </Text>
             </Box>
           </Box>
         </Box>
@@ -241,24 +270,60 @@ export default function Home() {
 
       <Box>
         <Box
-          style={{
-            background: "url('img/footer.svg')",
-            backgroundSize: "cover",
-            height: "250px",
-          }}
-        ></Box>
+          background="url('img/footer.svg')"
+          backgroundSize="cover"
+          height="250px"
+        >
+          <Box marginX={["5", "5", "20", "20"]}>
+            <Text fontWeight="700" fontSize="32px" color="#FFFFFF">
+              70% off
+            </Text>
+            <Button
+              colorScheme="whiteAlpha"
+              variant="solid"
+              color="black"
+              fontWeight="700"
+              fontSize="15px"
+            >
+              SUSCRIBE{" "}
+            </Button>
+          </Box>
+        </Box>
 
         <Box heigth="200px" backgroundColor="#FF723D">
-          <Box marginX="20" paddingY="10" display="flex">
+          <Box
+            paddingY="10"
+            display="flex"
+            flexDirection={["column", "row"]}
+            marginX={["5", "5", "20", "20"]}
+          >
             <Box height="65px" width="65px">
               <img src="/img/newsletter.svg" alt="" />
             </Box>
-            <Box maxWidth="600px" color="#FFFFFF">
-              <Text>Sign up for Newsletter</Text>
-              <Text>
+            <Box maxWidth="600px" color="#FFFFFF" paddingTop={["4", "none"]}>
+              <Text fontSize="22px" fontWeight="700">
+                Sign up for Newsletter
+              </Text>
+              <Text fontWeight="400" paddingTop="4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </Text>
+              <Input
+                placeholder="Enter your email here"
+                backgroundColor="#FFFFFF"
+                marginTop="6"
+                paddingY="6"
+              />
+              <Button
+                variant="solid"
+                color="#FFFFFF"
+                fontWeight="700"
+                fontSize="15px"
+                backgroundColor="black"
+                marginTop="4"
+              >
+                SUSCRIBE{" "}
+              </Button>
             </Box>
           </Box>
         </Box>

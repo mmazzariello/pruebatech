@@ -8,9 +8,9 @@ export const CategoryBox = ({ url }) => {
       minWidth="300px"
       background={`url('${url}')`}
       width="32%"
-      height="100px"
+      height="130px"
       borderRadius="xl"
-      marginTop="4"
+      marginTop="5"
     />
   );
 };
