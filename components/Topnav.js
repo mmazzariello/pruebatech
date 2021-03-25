@@ -1,13 +1,60 @@
 import Searchbar from "./Searchbar";
+import { Box } from "@chakra-ui/layout";
+import { Text } from "@chakra-ui/layout";
 
 const Topnav = () => {
   return (
-    <div className="px-14 py-4 background-topNav">
-      <div>
-        <img src="img/daitool.svg" alt="" />
-      </div>
-      <div></div>
-    </div>
+    <Box backgroundColor="orangeBrand.100">
+      <Box
+        className="border"
+        marginX={["5", "5", "5", "10"]}
+        paddingY={["16", "16", "4"]}
+      >
+        <Box className="border4" display="flex" justifyContent="space-between">
+          <Box className="border2" display="flex">
+            <img
+              width={["100px", "100px", "350px"]}
+              src="img/daitool.svg"
+              alt=""
+              marginLeft="5px"
+            />
+          </Box>
+          <Box
+            className="border3"
+            display="flex"
+            flexDirection="row"
+            justifyContent="space-between"
+          >
+            <Box display="flex" flexDirection="column" alignItems="center">
+              <img
+                src="/img/topNav/user.svg
+          "
+                alt=""
+              />
+              <Text color="#FFFFFF" fontSize="14px" fontWeight="400">
+                Sign in
+              </Text>
+            </Box>
+
+            <Box
+              display="inline-flex"
+              flexDirection="column"
+              alignItems="center"
+            >
+              <img
+                src="/img/topNav/cart.svg
+          "
+                alt=""
+              />
+              <Text color="#FFFFFF" fontSize="14px" fontWeight="400">
+                Cart
+              </Text>
+            </Box>
+          </Box>
+        </Box>
+        <Searchbar />
+      </Box>
+    </Box>
   );
 };
 
