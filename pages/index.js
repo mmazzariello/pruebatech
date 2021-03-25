@@ -442,24 +442,56 @@ export default function Home() {
       </Box>
 
       <footer>
-        <Box borderTop="1px solid" borderColor="gray.200"></Box>
+        <Box marginX={["5", "5", "20", "20"]}>
+          <Box
+            display={["none", "none", "block", "block"]}
+            borderTop="1px solid"
+            borderColor="gray.200"
+          ></Box>
 
-        <Box
-          display="flex"
-          justifyContent="space-between"
-          marginX="20"
-          paddingY="6"
-        >
-          <Text>Daitool - © 2021 All Rights Reserved</Text>
-          <Box display="flex">
-            <Text paddingRight="6">Payment</Text>
-            <Box fontStyle="italic" fontWeight="700" fontSize="18px">
-              <Text color="blueBrand.200" paddingLeft="4">
-                VISA
+          <Box
+            display="flex"
+            flexDirection={["column-reverse", "column-reverse", "row", "row"]}
+            justifyContent={["none", "none", "space-between"]}
+            paddingY="4"
+          >
+            <Text paddingTop="4">Daitool - © 2021 All Rights Reserved</Text>
+
+            <Box
+              display={["block", "block", "none", "none"]}
+              borderTop="1px solid"
+              borderColor="gray.200"
+            ></Box>
+
+            <Box display="flex">
+              <Text
+                display={["none", "none", "none", "block"]}
+                paddingRight="6"
+              >
+                Payment
               </Text>
-              <Text paddingLeft="4">MASTERCARD</Text>
-              <Text paddingLeft="4">PAYPAL</Text>
-              <Text paddingLeft="4">BITCOIN</Text>
+              <Box
+                fontStyle="italic"
+                fontWeight="700"
+                fontSize={["16px", "16px", "18px"]}
+                display="flex"
+                flexDirection="row"
+                paddingBottom={["4", "4", "0"]}
+              >
+                <Text color="blueBrand.200" paddingLeft={["0", "0", "4"]}>
+                  VISA
+                </Text>
+                <Text paddingLeft="4">
+                  <span color="rgba(255, 135, 23, 0.65)">MASTER</span>
+                  <span color="rgba(255, 135, 23, 0.65)">CARD</span>
+                </Text>
+                <Text color="blueBrand.100" paddingLeft="4">
+                  PAYPAL
+                </Text>
+                <Text color="orangeBrand.50" paddingLeft="4">
+                  BITCOIN
+                </Text>
+              </Box>
             </Box>
           </Box>
         </Box>
