@@ -336,59 +336,78 @@ export default function Home() {
         paddingTop="14"
         paddingBottom="32"
       >
-        <Box maxWidth="370px">
-          <img src="img/daitoolblack.svg" alt="" />
-          <Text marginTop="8" fontWeight="400" color="#232323">
+        <Box maxWidth="320px">
+          <img width="140px" src="img/daitoolblack.svg" alt="" />
+          <Text marginTop="8" fontWeight="400" fontSize="14px" color="#232323">
             Daitool is the global reference site for high-quality, Japanese
             brand, industrial tools and supplies. We empower clients to build
             better, anywhere in the world.
           </Text>
-          <Box marginTop="6" display="flex" justifyContent="space-between">
-            <img width="60px" src="/img/youtube.svg" alt="" />
-            <img width="60px" src="/img/linkedin.svg" alt="" />
-            <img width="60px" src="/img/twitter.svg" alt="" />
-            <img width="60px" src="/img/facebook.svg" alt="" />
-            <img width="60px" src="/img/instagram.svg" alt="" />
+          <Box
+            maxWidth="300px"
+            marginTop="6"
+            display="flex"
+            justifyContent="space-between"
+          >
+            <img width="50px" src="/img/youtube.svg" alt="" />
+            <img width="50px" src="/img/linkedin.svg" alt="" />
+            <img width="50px" src="/img/twitter.svg" alt="" />
+            <img width="50px" src="/img/facebook.svg" alt="" />
+            <img width="50px" src="/img/instagram.svg" alt="" />
           </Box>
         </Box>
-        <Box maxWidth="200px">
-          <Text fontWeight="700" marginBottom="5" marginTop="4" fontSize="20px">
+
+        <Box>
+          <Text fontWeight="700" marginBottom="8" marginTop="4" fontSize="20px">
             QUICK LINKS
           </Text>
-          <ul marginY="8">
-            <li>About us</li>
-            <li>Blog</li>
-            <li>Shop</li>
-            <li>Brands</li>
-            <li>Wholesale</li>
+          <ul>
+            <li className="footer-spacing">About us</li>
+            <li className="footer-spacing">Blog</li>
+            <li className="footer-spacing">Shop</li>
+            <li className="footer-spacing">Brands</li>
+            <li className="footer-spacing">Wholesale</li>
           </ul>
         </Box>
-        <Box maxWidth="200px">
-          <Text fontWeight="700" marginBottom="5" marginTop="4" fontSize="20px">
+        <Box>
+          <Text fontWeight="700" marginBottom="8" marginTop="4" fontSize="20px">
             CUSTOMER AREA
           </Text>
           <ul>
-            <li>My Account</li>
-            <li>Deliveries</li>
-            <li>Help Center (FAQs)</li>
-            <li>Terms</li>
-            <li>Privacy Policy</li>
+            <li className="footer-spacing">My Account</li>
+            <li className="footer-spacing">Deliveries</li>
+            <li className="footer-spacing">Help Center (FAQs)</li>
+            <li className="footer-spacing">Terms</li>
+            <li className="footer-spacing">Privacy Policy</li>
           </ul>
         </Box>
 
-        <Box maxWidth="200px">
-          <Text fontWeight="700" marginBottom="5" marginTop="4" fontSize="20px">
+        <Box maxWidth="280px">
+          <Text fontWeight="700" marginBottom="8" marginTop="4" fontSize="20px">
             CONTACT
           </Text>
-          <Text>
+          <Text fontWeight="400" fontSize="14px">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut
           </Text>
-          <Text>Have any questions?</Text>
-          <Text color="orangeFont.100">+ 123 456 789</Text>
-          <ButtonGroup variant="outline" spacing="6">
-            <Button colorScheme="cyan">Save</Button>
-          </ButtonGroup>
+          <Box display="flex" justifyContent="space-between">
+            <Box>
+              <Text paddingTop="4" fontSize="14px">
+                Have any questions?
+              </Text>
+              <Text
+                paddingTop="1"
+                fontWeight="400"
+                color="orangeBrand.100"
+                fontSize="14px"
+              >
+                + 123 456 789
+              </Text>
+            </Box>
+            <ButtonGroup variant="outline" spacing="6" paddingTop="4">
+              <Button colorScheme="cyan">CONTACT</Button>
+            </ButtonGroup>
+          </Box>
         </Box>
       </Box>
 

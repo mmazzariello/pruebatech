@@ -15,6 +15,10 @@ a {
   background-color: #92d2d9;
 }
 
+.footer-spacing {
+  margin-bottom: 16px;
+}
+
 .background-topNav {
   background-color: #ff723d;
 }
