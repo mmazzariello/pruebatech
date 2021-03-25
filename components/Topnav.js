@@ -25,17 +25,6 @@ const Topnav = () => {
             flexDirection="row"
             justifyContent="space-between"
           >
-            <Box display="flex" flexDirection="column" alignItems="center">
-              <img
-                src="/img/topNav/user.svg
-          "
-                alt=""
-              />
-              <Text color="#FFFFFF" fontSize="14px" fontWeight="400">
-                Sign in
-              </Text>
-            </Box>
-
             <Box
               display="inline-flex"
               flexDirection="column"
@@ -46,9 +35,6 @@ const Topnav = () => {
           "
                 alt=""
               />
-              <Text color="#FFFFFF" fontSize="14px" fontWeight="400">
-                Cart
-              </Text>
             </Box>
           </Box>
         </Box>
