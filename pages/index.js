@@ -37,11 +37,11 @@ export default function Home() {
             display="flex"
             flexDirection="column"
             height="100%"
-            justifyContent={["flex-end", "flex-end", "center"]}
+            justifyContent={["flex-end", "flex-end", "flex-end", "center"]}
             textAlign="end"
             alignItems="flex-end"
             color="#FFFFFF"
-            paddingRight={["none", "none", "24"]}
+            paddingRight={["none", "none", "4", "24"]}
           >
             <Text fontSize="40px" fontWeight="700">
               New Products
@@ -104,17 +104,18 @@ export default function Home() {
       </Box>
 
       <Box
+        // className="border4"
         display="flex"
         flexWrap="wrap"
         justifyContent="space-around"
-        marginX="20"
+        marginX={["5", "5", "20", "20"]}
       >
-        <CategoryBox url="img/safety.svg" />
-        <CategoryBox url="img/janitorial.svg" />
-        <CategoryBox url="img/tools.svg" />
-        <CategoryBox url="img/woodworking.svg" />
-        <CategoryBox url="img/gardening.svg" />
-        <CategoryBox url="img/office.svg" />
+        <CategoryBox title="Safety" url="img/safety.svg" />
+        <CategoryBox title="Janitorial" url="img/janitorial.svg" />
+        <CategoryBox title="Tools" url="img/tools.svg" />
+        <CategoryBox title="Woodworking" url="img/woodworking.svg" />
+        <CategoryBox title="Gardening" url="img/gardening.svg" />
+        <CategoryBox title="Office supplies" url="img/office.svg" />
       </Box>
 
       <Box marginX={["5", "5", "20", "20"]}>
@@ -463,7 +464,7 @@ export default function Home() {
               paddingX={["28px", "28px", "16px"]}
               borderRadius="12px"
             >
-              SUSCRIBE
+              SUBSCRIBE
             </Button>
           </Box>
         </Box>
@@ -487,14 +488,26 @@ export default function Home() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </Text>
-              <Box display="flex" flexDirection={["column", "column", "row"]}>
+              <Box
+                display="flex"
+                flexDirection={["column", "column", "row"]}
+                position="relative"
+              >
                 <Input
                   placeholder="Enter your email here"
                   backgroundColor="#FFFFFF"
                   marginTop="6"
                   paddingY="6"
+                  color="gray.700"
                 />
-                <Box display="flex" justifyContent="flex-end">
+                <Box
+                  display={["flex", "flex", "block"]}
+                  position={["block", "block", "absolute"]}
+                  zIndex="1"
+                  right={[null, null, "5px"]}
+                  top={[null, null, "13px"]}
+                  justifyContent="flex-end"
+                >
                   <Button
                     variant="solid"
                     color="#FFFFFF"
@@ -505,7 +518,7 @@ export default function Home() {
                     width="100px"
                     paddingX={["30px", "30px", "16px"]}
                   >
-                    <Text fontSize={["15px", "15px", "16px"]}>SUSCRIBE</Text>
+                    <Text fontSize={["15px", "15px", "16px"]}>SUBSCRIBE</Text>
                   </Button>
                 </Box>
               </Box>
@@ -691,10 +704,14 @@ export default function Home() {
                 <Text color="blueBrand.200" paddingLeft={["0", "0", "4"]}>
                   VISA
                 </Text>
-                <Text paddingLeft="4">
-                  <span color="rgba(255, 135, 23, 0.65)">MASTER</span>
-                  <span color="rgba(255, 135, 23, 0.65)">CARD</span>
-                </Text>
+                <Box paddingX="4">
+                  <Text as="span" color="red.300">
+                    MASTER
+                  </Text>
+                  <Text as="span" color="yellow.600">
+                    CARD
+                  </Text>
+                </Box>
                 <Text color="blueBrand.100" paddingLeft="4">
                   PAYPAL
                 </Text>

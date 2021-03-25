@@ -5,6 +5,16 @@ import {
   MenuItem,
   IconButton,
   Box,
+  Drawer,
+  useDisclosure,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+  DrawerHeader,
+  DrawerBody,
+  DrawerFooter,
+  Link,
+  Heading,
 } from "@chakra-ui/react";
 
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
@@ -81,4 +91,37 @@ const Hamburguer = () => {
   );
 };
 
-export default Hamburguer;
+const DrawerMenu = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure(false);
+
+  return (
+    <Box>
+      <IconButton
+        variant="ghost"
+        color="white"
+        colorScheme="whiteAlpha"
+        isRound
+        onClick={onOpen}
+        icon={<HamburgerIcon />}
+      />
+      <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
+        <DrawerOverlay>
+          <DrawerContent>
+            <DrawerCloseButton left="2" />
+            <DrawerHeader paddingLeft="12" paddingTop="2">
+              Daitool
+            </DrawerHeader>
+
+            <DrawerBody>
+              <Heading>Products</Heading>
+              <Link>Safety</Link>
+              <Link>Janitorial</Link>
+            </DrawerBody>
+          </DrawerContent>
+        </DrawerOverlay>
+      </Drawer>
+    </Box>
+  );
+};
+
+export default DrawerMenu;

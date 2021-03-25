@@ -1,7 +1,6 @@
 import { Box, Heading, Image, Text, useBreakpoint } from "@chakra-ui/react";
 import { CarouselProvider, Slider, Slide } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
-import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 
 export const CarouselBlog = () => {
   const currentBreakpoint = useBreakpoint();
@@ -17,17 +16,13 @@ export const CarouselBlog = () => {
 
   return (
     <Box>
-      <CarouselProvider
-        isIntrinsicHeight
-        totalSlides={9}
-        visibleSlides={visibleSlides}
-      >
+      <CarouselProvider isIntrinsicHeight totalSlides={9} visibleSlides={1.1}>
         <Box display="flex">
           <Slider>
             {[...Array(9).keys()].map((index) => {
               return (
                 <Slide key={index} index={index}>
-                  <Box paddingX={["1", "1", "5"]}>
+                  <Box marginLeft="5">
                     <BlogCard title={`Blog Post publication ${index}`} />
                   </Box>
                 </Slide>
@@ -46,14 +41,7 @@ const BlogCard = ({
   author = "Author",
 }) => {
   return (
-    <Box
-      boxShadow="lg"
-      borderRadius="lg"
-      padding={["1", "2", "4"]}
-      width="95%"
-      marginX={["5", "5", "5", "20"]}
-      marginTop="5"
-    >
+    <Box boxShadow="lg" borderRadius="lg" marginTop="5">
       <Image src={urlBlog} />
       <Box marginTop="2" />
       <Heading fontSize="md">{titleBlog}</Heading>

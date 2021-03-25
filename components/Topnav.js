@@ -9,10 +9,10 @@ const Topnav = () => {
       <Box
         marginX={["5", "5", "5", "10"]}
         paddingTop={["4", "4", "4"]}
-        paddingBottom={["4", "4", "2"]}
+        paddingBottom={["2"]}
       >
-        <Box display="flex" justifyContent="space-between">
-          <Box>
+        <Box display="flex" alignItems="center" justifyContent="space-between">
+          <Box display={["block", null, "none"]}>
             <Hamburguer />
           </Box>
           <Box marginBottom="1" display="flex">
@@ -20,8 +20,16 @@ const Topnav = () => {
               width={["100px", "100px", "350px"]}
               src="img/daitool.svg"
               alt=""
-              marginLeft="5px"
+              margin-left="5px"
             />
+          </Box>
+          <Box
+            display={["none", "none", "block", "block"]}
+            flexGrow={1}
+            maxWidth="900px"
+            marginX="20"
+          >
+            <Searchbar />
           </Box>
           <Box
             display="flex"
@@ -33,14 +41,12 @@ const Topnav = () => {
               flexDirection="column"
               alignItems="center"
             >
-              <img
-                src="/img/topNav/cartGlass.svg
-          "
-                alt=""
-              />
+              <img src="/img/topNav/cartGlass.svg" alt="" />
             </Box>
           </Box>
         </Box>
+      </Box>
+      <Box display={["block", null, "none"]} marginX="5" paddingBottom="3">
         <Searchbar />
       </Box>
     </Box>

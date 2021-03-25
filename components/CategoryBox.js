@@ -1,6 +1,10 @@
-import { Box } from "@chakra-ui/layout";
+import { Box, Text } from "@chakra-ui/layout";
 
-export const CategoryBox = ({ url }) => {
+export const CategoryBox = ({
+  url,
+  title = "Title",
+  subtitle = "Subtitle",
+}) => {
   return (
     <Box
       maxWidth="380px"
@@ -10,6 +14,22 @@ export const CategoryBox = ({ url }) => {
       height="130px"
       borderRadius="xl"
       marginTop="5"
-    ></Box>
+    >
+      <Box
+        borderRadius="xl"
+        backgroundColor="rgba(1,1,1,.6)"
+        textAlign="center"
+        display="flex"
+        alignItems="center"
+        flexDirection="column"
+        justifyContent="center"
+        height="100%"
+      >
+        <Text color="white" fontWeight="bold">
+          {title}
+        </Text>
+        <Text color="gray.300">{subtitle}</Text>
+      </Box>
+    </Box>
   );
 };

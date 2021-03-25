@@ -47,6 +47,7 @@ export const Carousel = () => {
             <Box display="flex">
               <ButtonBack>
                 <IconButton
+                  as="div"
                   isRound
                   variant="ghost"
                   icon={<BiChevronLeftCircle size="20px" />}
@@ -54,6 +55,7 @@ export const Carousel = () => {
               </ButtonBack>
               <ButtonNext>
                 <IconButton
+                  as="div"
                   isRound
                   variant="ghost"
                   icon={<BiChevronRightCircle size="20px" />}
@@ -98,7 +100,12 @@ const ProductCard = ({
       <Text fontSize="sm" color="gray.400" fontWeight="400">
         {description}
       </Text>
-      <Box display="flex" marginTop={["1", "1", "4"]} flexWrap="wrap">
+      <Box
+        display="flex"
+        alignItems="center"
+        marginTop={["1", "1", "4"]}
+        flexWrap="wrap"
+      >
         <Text color="orangeBrand.100" fontWeight="bold" fontSize="sm">
           {price}
         </Text>
@@ -111,9 +118,9 @@ const ProductCard = ({
         >
           {originalPrice}
         </Text>
+        <Box flexGrow={1} />
         <Box display={["none", "none", "block", "block"]}>
-          <Box flexGrow={1} />
-          <Box className="border" display="flex" fontSize="xs">
+          <Box display="flex" fontSize="xs">
             <AiFillStar />
             <AiFillStar />
             <AiFillStar />
