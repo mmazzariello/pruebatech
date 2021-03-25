@@ -27,12 +27,39 @@ export default function Home() {
 
       <header>
         <Box
-          style={{
-            background: "url('img/head.svg')",
-            backgroundSize: "cover",
-            height: "400px",
-          }}
-        ></Box>
+          background="url('img/head.svg')"
+          backgroundSize="cover"
+          height="400px"
+        >
+          <Box
+            marginX={["5", "5", "5", "20"]}
+            display="flex"
+            flexDirection="column"
+            height="100%"
+            justifyContent={["flex-end", "flex-end", "center"]}
+            textAlign="end"
+            alignItems="flex-end"
+            color="#FFFFFF"
+            paddingRight={["none", "none", "24"]}
+          >
+            <Text fontSize="40px" fontWeight="700">
+              New Products
+            </Text>
+            <Text fontSize="36px" fontWeight="200">
+              Japan
+            </Text>
+            <Text
+              fontSize="18px"
+              fontWeight="600"
+              color="orangeBrand.100"
+              marginTop={["4px"]}
+              paddingBottom={["12", "12", "none"]}
+              decoration="underline"
+            >
+              Discover now
+            </Text>
+          </Box>
+        </Box>
       </header>
 
       <Box>

@@ -1,5 +1,4 @@
 import { Box } from "@chakra-ui/layout";
-import React from "react";
 
 export const CategoryBox = ({ url }) => {
   return (
@@ -11,6 +10,6 @@ export const CategoryBox = ({ url }) => {
       height="130px"
       borderRadius="xl"
       marginTop="5"
-    />
+    ></Box>
   );
 };
