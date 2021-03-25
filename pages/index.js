@@ -89,20 +89,92 @@ export default function Home() {
         <CategoryBox url="img/office.svg" />
       </Box>
 
-      <Text
-        marginX={["5", "5", "20", "20"]}
-        marginY="8"
-        color={["mediumGray.50", "#000000"]}
-        fontWeight="700"
-        fontSize={["18", "18", "30", "30"]}
-        display={["block", "block", "none"]}
-      >
-        Our Brands
-      </Text>
+      <Box marginX={["5", "5", "20", "20"]}>
+        <Text
+          marginTop="8"
+          marginBottom="4"
+          color={["mediumGray.50", "#000000"]}
+          fontWeight="700"
+          fontSize={["18", "18", "30", "30"]}
+          display={["block", "block", "none"]}
+        >
+          Our Brands
+        </Text>
+
+        <Box display="flex" flexWrap="wrap" justifyContent="space-around">
+          <Box
+            fontSize="sm"
+            width="120px"
+            textAlign="center"
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+            height="70px"
+          >
+            <img src="/img/brands/pentrel.svg" alt="" />
+          </Box>
+          <Box
+            fontSize="sm"
+            width="120px"
+            textAlign="center"
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+            height="70px"
+          >
+            <img src="/img/brands/vessel.svg" alt="" />
+          </Box>
+          <Box
+            fontSize="sm"
+            width="120px"
+            textAlign="center"
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+            height="70px"
+          >
+            <img src="/img/brands/olfa.svg" alt="" />
+          </Box>
+          <Box
+            fontSize="sm"
+            width="120px"
+            textAlign="center"
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+            height="70px"
+          >
+            <img src="/img/brands/anex.svg" alt="" />
+          </Box>
+          <Box
+            fontSize="sm"
+            width="120px"
+            textAlign="center"
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+            height="70px"
+          >
+            <img src="/img/brands/mitutoyo.svg" alt="" />
+          </Box>
+          <Box
+            fontSize="sm"
+            width="120px"
+            textAlign="center"
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+            height="70px"
+          >
+            <img src="/img/brands/toyo.svg" alt="" />
+          </Box>
+        </Box>
+      </Box>
 
       <Text
         marginX={["5", "5", "20", "20"]}
-        marginY="8"
+        marginTop="10"
+        marginBottom="8"
         color={["mediumGray.50", "#000000"]}
         fontWeight="700"
         fontSize={["18", "18", "30", "30"]}
