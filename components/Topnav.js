@@ -7,16 +7,15 @@ const Topnav = () => {
   return (
     <Box backgroundColor="orangeBrand.100">
       <Box
-        className="border"
         marginX={["5", "5", "5", "10"]}
         paddingTop={["4", "4", "4"]}
         paddingBottom={["4", "4", "2"]}
       >
-        <Box display="flex" className="border2" justifyContent="space-between">
+        <Box display="flex" justifyContent="space-between">
           <Box>
             <Hamburguer />
           </Box>
-          <Box marginBottom="1" className="border3" display="flex">
+          <Box marginBottom="1" display="flex">
             <img
               width={["100px", "100px", "350px"]}
               src="img/daitool.svg"

@@ -8,6 +8,7 @@ import { Text } from "@chakra-ui/react";
 import { Input } from "@chakra-ui/react";
 import { CategoryBox } from "components/CategoryBox";
 import { Carousel } from "components/Carousel";
+import { CarouselBlog } from "components/CarouselBlog";
 
 export default function Home() {
   return (
@@ -328,7 +329,7 @@ export default function Home() {
         <Carousel></Carousel>
       </Box>
 
-      <Box>
+      <Box display={["block", "block", "none", "none"]}>
         <Text
           marginX={["5", "5", "20", "20"]}
           marginTop="10"
@@ -339,72 +340,91 @@ export default function Home() {
           Blog Posts
         </Text>
 
-        <Box
-          display="flex"
-          justifyContent="space-around"
-          marginX="20"
-          flexWrap="wrap"
-          paddingY="5"
-        >
-          <Box display="flex" flexDirection="column">
-            <Box
-              marginX={["5", "5", "20", "20"]}
-              background="url('img/blog.svg')"
-              backgroundSize="cover"
-              height="180px"
-              maxWidth="400px"
-              minWidth="300px"
-              width="32%"
-              marginTop="4"
-            ></Box>
-            <Box paddingTop="4">
-              <Text marginTop="1.5" fontWeight="700" fontSize="18px">
-                Blog Post publication 1
-              </Text>
-              <Text fontWeight="400" fontSize="14px" color="mediumGray.50">
-                Author
-              </Text>
-            </Box>
-          </Box>
-          <Box display="flex" flexDirection="column">
-            <Box
-              marginX={["5", "5", "20", "20"]}
-              background="url('img/blog.svg')"
-              backgroundSize="cover"
-              height="180px"
-              maxWidth="400px"
-              minWidth="300px"
-              width="32%"
-              marginTop="4"
-            ></Box>
+        <Box>
+          <CarouselBlog />
+        </Box>
+      </Box>
 
-            <Box paddingTop="4">
-              <Text marginTop="1.5" fontWeight="700" fontSize="18px">
-                Blog Post publication 1
-              </Text>
-              <Text fontWeight="400" fontSize="14px" color="mediumGray.50">
-                Author
-              </Text>
+      <Box marginX="20" marginY="10">
+        <Box display={["none", "none", "block", "block"]}>
+          <Text
+            color={["mediumGray.50", "#000000"]}
+            fontWeight="700"
+            fontSize={["18", "18", "30", "30"]}
+          >
+            Blog Posts
+          </Text>
+
+          <Box
+            display="flex"
+            flexDirection="row"
+            flexWrap="wrap"
+            justifyContent="space-around"
+          >
+            <Box>
+              <Box
+                marginX="1"
+                background="url('img/blog.svg')"
+                backgroundSize="cover"
+                height="180px"
+                maxWidth="400px"
+                minWidth="300px"
+                marginTop="4"
+              ></Box>
+              <Box paddingTop="4">
+                <Text marginTop="1.5" fontWeight="700" fontSize="18px">
+                  Blog Post publication 1
+                </Text>
+                <Text fontWeight="400" fontSize="14px" color="mediumGray.50">
+                  Author
+                </Text>
+              </Box>
             </Box>
-          </Box>
-          <Box display="flex" flexDirection="column">
-            <Box
-              marginX={["5", "5", "20", "20"]}
-              background="url('img/blog.svg')"
-              backgroundSize="cover"
-              height="180px"
-              maxWidth="400px"
-              minWidth="300px"
-              width="32%"
-              marginTop="4"
-            ></Box>
-            <Box paddingTop="4">
-              <Text marginTop="1.5" fontWeight="700" fontSize="18px">
-                Blog Post publication 1
-              </Text>
-              <Text fontWeight="400" fontSize="14px" color="mediumGray.50">
-                Author
-              </Text>
+
+            <Box>
+              <Box display="flex" flexDirection="column">
+                <Box
+                  marginX="1"
+                  background="url('img/blog.svg')"
+                  backgroundSize="cover"
+                  height="180px"
+                  maxWidth="400px"
+                  minWidth="300px"
+                  marginTop="4"
+                ></Box>
+
+                <Box paddingTop="4">
+                  <Text marginTop="1.5" fontWeight="700" fontSize="18px">
+                    Blog Post publication 1
+                  </Text>
+                  <Text fontWeight="400" fontSize="14px" color="mediumGray.50">
+                    Author
+                  </Text>
+                </Box>
+              </Box>
+            </Box>
+
+            <Box>
+              <Box display="flex" flexDirection="column">
+                <Box
+                  marginX="1"
+                  background="url('img/blog.svg')"
+                  backgroundSize="cover"
+                  height="180px"
+                  maxWidth="400px"
+                  minWidth="300px"
+                  marginTop="4"
+                ></Box>
+
+                <Box paddingTop="4">
+                  <Text marginTop="1.5" fontWeight="700" fontSize="18px">
+                    Blog Post publication 1
+                  </Text>
+                  <Text fontWeight="400" fontSize="14px" color="mediumGray.50">
+                    Author
+                  </Text>
+                </Box>
+              </Box>
             </Box>
           </Box>
         </Box>
