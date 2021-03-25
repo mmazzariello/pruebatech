@@ -285,7 +285,7 @@ export default function Home() {
               fontWeight="700"
               fontSize="15px"
             >
-              SUSCRIBE{" "}
+              SUSCRIBE
             </Button>
           </Box>
         </Box>
@@ -336,24 +336,26 @@ export default function Home() {
         paddingTop="14"
         paddingBottom="32"
       >
-        <Box maxWidth="200px">
+        <Box maxWidth="370px">
           <img src="img/daitoolblack.svg" alt="" />
-          <Text>
+          <Text marginTop="8" fontWeight="400" color="#232323">
             Daitool is the global reference site for high-quality, Japanese
             brand, industrial tools and supplies. We empower clients to build
             better, anywhere in the world.
           </Text>
-          <Box display="flex" justifyContent="space-between">
-            <img src="/img/youtube.svg" alt="" />
-            <img src="/img/linkedin.svg" alt="" />
-            <img src="/img/twitter.svg" alt="" />
-            <img src="/img/facebook.svg" alt="" />
-            <img src="/img/instagram.svg" alt="" />
+          <Box marginTop="6" display="flex" justifyContent="space-between">
+            <img width="60px" src="/img/youtube.svg" alt="" />
+            <img width="60px" src="/img/linkedin.svg" alt="" />
+            <img width="60px" src="/img/twitter.svg" alt="" />
+            <img width="60px" src="/img/facebook.svg" alt="" />
+            <img width="60px" src="/img/instagram.svg" alt="" />
           </Box>
         </Box>
         <Box maxWidth="200px">
-          <Text>QUICK LINKS</Text>
-          <ul>
+          <Text fontWeight="700" marginBottom="5" marginTop="4" fontSize="20px">
+            QUICK LINKS
+          </Text>
+          <ul marginY="8">
             <li>About us</li>
             <li>Blog</li>
             <li>Shop</li>
@@ -362,7 +364,9 @@ export default function Home() {
           </ul>
         </Box>
         <Box maxWidth="200px">
-          <Text>CUSTOMER AREA</Text>
+          <Text fontWeight="700" marginBottom="5" marginTop="4" fontSize="20px">
+            CUSTOMER AREA
+          </Text>
           <ul>
             <li>My Account</li>
             <li>Deliveries</li>
@@ -373,7 +377,9 @@ export default function Home() {
         </Box>
 
         <Box maxWidth="200px">
-          <Text>CONTACT</Text>
+          <Text fontWeight="700" marginBottom="5" marginTop="4" fontSize="20px">
+            CONTACT
+          </Text>
           <Text>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut
