@@ -89,6 +89,27 @@ export default function Home() {
         <CategoryBox url="img/office.svg" />
       </Box>
 
+      <Text
+        marginX={["5", "5", "20", "20"]}
+        marginY="8"
+        color={["mediumGray.50", "#000000"]}
+        fontWeight="700"
+        fontSize={["18", "18", "30", "30"]}
+        display={["block", "block", "none"]}
+      >
+        Our Brands
+      </Text>
+
+      <Text
+        marginX={["5", "5", "20", "20"]}
+        marginY="8"
+        color={["mediumGray.50", "#000000"]}
+        fontWeight="700"
+        fontSize={["18", "18", "30", "30"]}
+        display={["block", "block", "none"]}
+      >
+        Daitool Promise
+      </Text>
       <Box
         display="flex"
         flexWrap="wrap"
@@ -99,7 +120,7 @@ export default function Home() {
         <Box
           borderRadius="base"
           border="2px solid"
-          borderColor="gray.100"
+          borderColor={["#FFFFFF", "#FFFFFF", "gray.100"]}
           fontSize="sm"
           width="120px"
           textAlign="center"
@@ -107,9 +128,9 @@ export default function Home() {
           flexDirection="column"
           justifyContent="center"
           height="70px"
-          marginTop={["2", "none", "none", "none"]}
         >
-          <Text>Efficient</Text>
+          <img src="/img/conversation.svg" alt="" />
+          <Text fontWeight="700">Efficient</Text>
           <Text color="gray.400" fontSize="xx-small">
             International Shipping
           </Text>
@@ -117,7 +138,7 @@ export default function Home() {
         <Box
           borderRadius="base"
           border="2px solid"
-          borderColor="gray.100"
+          borderColor={["#FFFFFF", "#FFFFFF", "gray.100"]}
           fontSize="sm"
           width="120px"
           textAlign="center"
@@ -125,9 +146,10 @@ export default function Home() {
           flexDirection="column"
           justifyContent="center"
           height="70px"
-          marginTop={["2", "none", "none", "none"]}
         >
-          <Text>High-Quality</Text>
+          <img src="/img/hight2.svg" alt="" />
+
+          <Text fontWeight="700">High-Quality</Text>
           <Text color="gray.400" fontSize="xx-small">
             Guaranteed
           </Text>
@@ -135,7 +157,7 @@ export default function Home() {
         <Box
           borderRadius="base"
           border="2px solid"
-          borderColor="gray.100"
+          borderColor={["#FFFFFF", "#FFFFFF", "gray.100"]}
           fontSize="sm"
           width="120px"
           textAlign="center"
@@ -143,9 +165,11 @@ export default function Home() {
           flexDirection="column"
           justifyContent="center"
           height="70px"
-          marginTop={["2", "none", "none", "none"]}
+          marginTop={["8", "none", "none", "none"]}
         >
-          <Text>Reliable</Text>
+          <img src="/img/hight.svg" alt="" />
+
+          <Text fontWeight="700">Reliable</Text>
           <Text color="gray.400" fontSize="xx-small">
             from $40
           </Text>
@@ -153,7 +177,7 @@ export default function Home() {
         <Box
           borderRadius="base"
           border="2px solid"
-          borderColor="gray.100"
+          borderColor={["#FFFFFF", "#FFFFFF", "gray.100"]}
           fontSize="sm"
           width="120px"
           textAlign="center"
@@ -161,9 +185,11 @@ export default function Home() {
           flexDirection="column"
           justifyContent="center"
           height="70px"
-          marginTop={["2", "none", "none", "none"]}
+          marginTop={["8", "none", "none", "none"]}
         >
-          <Text>Global</Text>
+          <img src="/img/world.svg" alt="" />
+
+          <Text fontWeight="700">Global</Text>
           <Text color="gray.400" fontSize="xx-small">
             Ships to 50 countries
           </Text>
@@ -171,7 +197,7 @@ export default function Home() {
         <Box
           borderRadius="base"
           border="2px solid"
-          borderColor="gray.100"
+          borderColor={["#FFFFFF", "#FFFFFF", "gray.100"]}
           fontSize="sm"
           width="120px"
           textAlign="center"
@@ -179,9 +205,10 @@ export default function Home() {
           flexDirection="column"
           justifyContent="center"
           height="70px"
-          marginTop={["2", "none", "none", "none"]}
+          marginTop={["8", "none", "none", "none"]}
         >
-          <Text>Customer Focus</Text>
+          <img src="/img/avatar.svg" alt="" />
+          <Text fontWeight="700">Customer Focus</Text>
           <Text color="gray.400" fontSize="xx-small">
             from $40
           </Text>
@@ -195,6 +222,7 @@ export default function Home() {
           color={["mediumGray.50", "#000000"]}
           fontWeight="700"
           fontSize={["18", "18", "30", "30"]}
+          display={["block", "block", "none"]}
         >
           Top 10 Products
         </Text>

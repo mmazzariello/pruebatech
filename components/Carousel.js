@@ -61,11 +61,11 @@ export const Carousel = () => {
               </ButtonNext>
             </Box>
           </Box>
-          <Slider style={{ padding: "20px 10px" }}>
+          <Slider>
             {[...Array(14).keys()].map((index) => {
               return (
                 <Slide key={index} index={index}>
-                  <Box paddingX="5">
+                  <Box paddingX={["1", "1", "5"]}>
                     <ProductCard title={`Product ${index}`} />
                   </Box>
                 </Slide>
@@ -80,33 +80,45 @@ export const Carousel = () => {
 
 const ProductCard = ({
   title = "Some Title",
-  url = "https://images-na.ssl-images-amazon.com/images/I/61zmbFedouL.__AC_SX300_SY300_QL70_ML2_.jpg",
-  description = "Some description",
+  url = "/img/product.svg",
+  description = "Brief description",
   price = "$ 300",
   originalPrice = "$ 400",
 }) => {
   return (
-    <Box boxShadow="lg" borderRadius="lg" padding="4" width="100%">
+    <Box
+      boxShadow="lg"
+      borderRadius="lg"
+      padding={["2", "2", "4"]}
+      width="100%"
+    >
       <Image src={url} />
       <Box marginTop="2" />
       <Heading fontSize="md">{title}</Heading>
-      <Text fontSize="sm" color="gray.400">
+      <Text fontSize="sm" color="gray.400" fontWeight="400">
         {description}
       </Text>
-      <Box display="flex" marginTop="4" flexWrap="wrap">
-        <Text color="orange.300" fontSize="sm">
+      <Box display="flex" marginTop={["1", "1", "4"]} flexWrap="wrap">
+        <Text color="orangeBrand.100" fontWeight="bold" fontSize="sm">
           {price}
         </Text>
-        <Box marginRight="2" />
-        <Text color="gray.400" fontSize="sm" textDecoration="line-through">
+        <Box marginRight={["20", "20", "2"]} />
+        <Text
+          color="gray.400"
+          fontSize="sm"
+          fontWeight="400"
+          textDecoration="line-through"
+        >
           {originalPrice}
         </Text>
-        <Box flexGrow={1} />
-        <Box display="flex" alignItems="center" fontSize="xs">
-          <AiFillStar />
-          <AiFillStar />
-          <AiFillStar />
-          <AiOutlineStar />
+        <Box display={["none", "none", "block", "block"]}>
+          <Box flexGrow={1} />
+          <Box className="border" display="flex" fontSize="xs">
+            <AiFillStar />
+            <AiFillStar />
+            <AiFillStar />
+            <AiOutlineStar />
+          </Box>
         </Box>
       </Box>
     </Box>
