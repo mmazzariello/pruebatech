@@ -13,6 +13,7 @@ const colors = {
   },
   blueBrand: {
     100: "#92D2D9",
+    200: "#3D7BD8",
   },
   brand: {
     900: "#1a365d",

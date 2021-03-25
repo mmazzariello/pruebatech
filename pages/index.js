@@ -7,6 +7,7 @@ import { ButtonGroup } from "@chakra-ui/react";
 import { Text } from "@chakra-ui/react";
 import { Input } from "@chakra-ui/react";
 import { CategoryBox } from "components/CategoryBox";
+import { Carousel } from "components/Carousel";
 
 export default function Home() {
   return (
@@ -190,6 +191,19 @@ export default function Home() {
       <Box>
         <Text
           marginX={["5", "5", "20", "20"]}
+          marginY="8"
+          color={["mediumGray.50", "#000000"]}
+          fontWeight="700"
+          fontSize={["18", "18", "30", "30"]}
+        >
+          Top 10 Products
+        </Text>
+        <Carousel></Carousel>
+      </Box>
+
+      <Box>
+        <Text
+          marginX={["5", "5", "20", "20"]}
           marginTop="10"
           color={["mediumGray.50", "#000000"]}
           fontWeight="700"
@@ -236,6 +250,7 @@ export default function Home() {
               width="32%"
               marginTop="4"
             ></Box>
+
             <Box paddingTop="4">
               <Text marginTop="1.5" fontWeight="700" fontSize="18px">
                 Blog Post publication 1
@@ -274,16 +289,25 @@ export default function Home() {
           backgroundSize="cover"
           height="250px"
         >
-          <Box marginX={["5", "5", "20", "20"]}>
+          <Box
+            color="white"
+            display="inline-flex"
+            marginX={["5", "5", "20", "20"]}
+            flexDirection="column"
+            height="100%"
+            justifyContent="center"
+          >
             <Text fontWeight="700" fontSize="32px" color="#FFFFFF">
               70% off
             </Text>
             <Button
               colorScheme="whiteAlpha"
               variant="solid"
-              color="black"
+              color={["black", "black", "#FFFFFF"]}
               fontWeight="700"
               fontSize="15px"
+              backgroundColor={["#FFFFFF", "#FFFFFF", "orangeBrand.100"]}
+              marginTop="1"
             >
               SUSCRIBE
             </Button>
@@ -308,22 +332,28 @@ export default function Home() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </Text>
-              <Input
-                placeholder="Enter your email here"
-                backgroundColor="#FFFFFF"
-                marginTop="6"
-                paddingY="6"
-              />
-              <Button
-                variant="solid"
-                color="#FFFFFF"
-                fontWeight="700"
-                fontSize="15px"
-                backgroundColor="black"
-                marginTop="4"
-              >
-                SUSCRIBE{" "}
-              </Button>
+              <Box display="flex" flexDirection={["column", "column", "row"]}>
+                <Input
+                  placeholder="Enter your email here"
+                  backgroundColor="#FFFFFF"
+                  marginTop="6"
+                  paddingY="6"
+                />
+                <Box display="flex" justifyContent="flex-end">
+                  <Button
+                    variant="solid"
+                    color="#FFFFFF"
+                    fontWeight="700"
+                    fontSize="15px"
+                    backgroundColor="black"
+                    marginTop="4"
+                    display="flex"
+                    width="100px"
+                  >
+                    SUSCRIBE
+                  </Button>
+                </Box>
+              </Box>
             </Box>
           </Box>
         </Box>
@@ -423,10 +453,14 @@ export default function Home() {
           <Text>Daitool - © 2021 All Rights Reserved</Text>
           <Box display="flex">
             <Text paddingRight="6">Payment</Text>
-            <Text paddingLeft="4">VISA</Text>
-            <Text paddingLeft="4">MASTERCARD</Text>
-            <Text paddingLeft="4">PAYPAL</Text>
-            <Text paddingLeft="4">BITCOIN</Text>
+            <Box fontStyle="italic" fontWeight="700" fontSize="18px">
+              <Text color="blueBrand.200" paddingLeft="4">
+                VISA
+              </Text>
+              <Text paddingLeft="4">MASTERCARD</Text>
+              <Text paddingLeft="4">PAYPAL</Text>
+              <Text paddingLeft="4">BITCOIN</Text>
+            </Box>
           </Box>
         </Box>
       </footer>
