@@ -1,6 +1,7 @@
 import Searchbar from "./Searchbar";
 import { Box } from "@chakra-ui/layout";
 import { Text } from "@chakra-ui/layout";
+import Hamburguer from "./Hamburguer";
 
 const Topnav = () => {
   return (
@@ -8,10 +9,14 @@ const Topnav = () => {
       <Box
         className="border"
         marginX={["5", "5", "5", "10"]}
-        paddingY={["16", "16", "4"]}
+        paddingTop={["4", "4", "4"]}
+        paddingBottom={["4", "4", "2"]}
       >
-        <Box className="border4" display="flex" justifyContent="space-between">
-          <Box className="border2" display="flex">
+        <Box display="flex" className="border2" justifyContent="space-between">
+          <Box>
+            <Hamburguer />
+          </Box>
+          <Box marginBottom="1" className="border3" display="flex">
             <img
               width={["100px", "100px", "350px"]}
               src="img/daitool.svg"
@@ -20,7 +25,6 @@ const Topnav = () => {
             />
           </Box>
           <Box
-            className="border3"
             display="flex"
             flexDirection="row"
             justifyContent="space-between"
@@ -31,7 +35,7 @@ const Topnav = () => {
               alignItems="center"
             >
               <img
-                src="/img/topNav/cart.svg
+                src="/img/topNav/cartGlass.svg
           "
                 alt=""
               />

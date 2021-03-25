@@ -5,9 +5,8 @@ const Searchbar = () => {
     <Input
       borderRadius="16px"
       backgroundColor="#FFFFFF"
-      marginTop="4"
-      // placeholder="Basic usage"
-    />
+      paddingX="80px"
+    ></Input>
   );
 };
 
