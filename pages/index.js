@@ -297,7 +297,12 @@ export default function Home() {
             height="100%"
             justifyContent="center"
           >
-            <Text fontWeight="700" fontSize="32px" color="#FFFFFF">
+            <Text
+              fontWeight="700"
+              fontSize="28px"
+              color="#FFFFFF"
+              paddingTop={["75px", "75px", "none"]}
+            >
               70% off
             </Text>
             <Button
@@ -308,6 +313,8 @@ export default function Home() {
               fontSize="15px"
               backgroundColor={["#FFFFFF", "#FFFFFF", "orangeBrand.100"]}
               marginTop="1"
+              paddingX={["28px", "28px", "16px"]}
+              borderRadius="12px"
             >
               SUSCRIBE
             </Button>
@@ -316,15 +323,16 @@ export default function Home() {
 
         <Box heigth="200px" backgroundColor="#FF723D">
           <Box
-            paddingY="10"
+            paddingTop={["30px", "30px", "50px"]}
+            paddingBottom={["14px", "14px", "70px"]}
             display="flex"
             flexDirection={["column", "row"]}
             marginX={["5", "5", "20", "20"]}
           >
-            <Box height="65px" width="65px">
+            <Box height="65px" width={["55px", "55px", "65px"]}>
               <img src="/img/newsletter.svg" alt="" />
             </Box>
-            <Box maxWidth="600px" color="#FFFFFF" paddingTop={["4", "none"]}>
+            <Box maxWidth="600px" color="#FFFFFF" paddingTop={["1", "none"]}>
               <Text fontSize="22px" fontWeight="700">
                 Sign up for Newsletter
               </Text>
@@ -344,13 +352,13 @@ export default function Home() {
                     variant="solid"
                     color="#FFFFFF"
                     fontWeight="700"
-                    fontSize="15px"
                     backgroundColor="black"
                     marginTop="4"
                     display="flex"
                     width="100px"
+                    paddingX={["30px", "30px", "16px"]}
                   >
-                    SUSCRIBE
+                    <Text fontSize={["15px", "15px", "16px"]}>SUSCRIBE</Text>
                   </Button>
                 </Box>
               </Box>
@@ -360,22 +368,28 @@ export default function Home() {
       </Box>
 
       <Box
-        marginX="20"
+        marginX={["5", "5", "20", "20"]}
         display="flex"
+        flexDirection={["column", "column", "row"]}
         justifyContent="space-between"
         paddingTop="14"
-        paddingBottom="32"
+        paddingBottom={["8", "8", "32"]}
       >
-        <Box maxWidth="320px">
+        <Box maxWidth={["97%", "97%", "320px"]}>
           <img width="140px" src="img/daitoolblack.svg" alt="" />
-          <Text marginTop="8" fontWeight="400" fontSize="14px" color="#232323">
+          <Text
+            marginTop={["4", "4", "8"]}
+            fontWeight="400"
+            fontSize="14px"
+            color="#232323"
+          >
             Daitool is the global reference site for high-quality, Japanese
             brand, industrial tools and supplies. We empower clients to build
             better, anywhere in the world.
           </Text>
           <Box
-            maxWidth="300px"
-            marginTop="6"
+            maxWidth={["none", "none", "300px"]}
+            marginTop={["9", "9", "6"]}
             display="flex"
             justifyContent="space-between"
           >
@@ -387,42 +401,78 @@ export default function Home() {
           </Box>
         </Box>
 
-        <Box>
-          <Text fontWeight="700" marginBottom="8" marginTop="4" fontSize="20px">
-            QUICK LINKS
-          </Text>
-          <ul>
-            <li className="footer-spacing">About us</li>
-            <li className="footer-spacing">Blog</li>
-            <li className="footer-spacing">Shop</li>
-            <li className="footer-spacing">Brands</li>
-            <li className="footer-spacing">Wholesale</li>
-          </ul>
-        </Box>
-        <Box>
-          <Text fontWeight="700" marginBottom="8" marginTop="4" fontSize="20px">
-            CUSTOMER AREA
-          </Text>
-          <ul>
-            <li className="footer-spacing">My Account</li>
-            <li className="footer-spacing">Deliveries</li>
-            <li className="footer-spacing">Help Center (FAQs)</li>
-            <li className="footer-spacing">Terms</li>
-            <li className="footer-spacing">Privacy Policy</li>
-          </ul>
+        <Box
+          display={["block", "block", "none", "none"]}
+          display="flex"
+          justifyContent="space-between"
+          paddingTop={["8", "8", "0"]}
+          marginTop="4"
+        >
+          <Box>
+            <Text
+              fontWeight="700"
+              marginBottom={["4", "4", "8"]}
+              fontSize="20px"
+            >
+              QUICK LINKS
+            </Text>
+            <ul>
+              <li className="footer-spacing">About us</li>
+              <li className="footer-spacing">Blog</li>
+              <li className="footer-spacing">Shop</li>
+              <li className="footer-spacing">Brands</li>
+              <li className="footer-spacing">Wholesale</li>
+            </ul>
+          </Box>
+          <Box>
+            <Text
+              fontWeight="700"
+              marginBottom={["4", "4", "8"]}
+              fontSize="20px"
+            >
+              CUSTOMER AREA
+            </Text>
+            <ul>
+              <li className="footer-spacing">My Account</li>
+              <li className="footer-spacing">Deliveries</li>
+              <li className="footer-spacing">Help Center (FAQs)</li>
+              <li className="footer-spacing">Terms</li>
+              <li className="footer-spacing">Privacy Policy</li>
+            </ul>
+          </Box>
         </Box>
 
         <Box maxWidth="280px">
-          <Text fontWeight="700" marginBottom="8" marginTop="4" fontSize="20px">
+          <Text
+            display={["none", "none", "block", "block"]}
+            fontWeight="700"
+            marginBottom="8"
+            marginTop="4"
+            fontSize="20px"
+          >
             CONTACT
           </Text>
-          <Text fontWeight="400" fontSize="14px">
+          <Text
+            display={["none", "none", "block", "block"]}
+            fontWeight="400"
+            fontSize="14px"
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut
           </Text>
-          <Box display="flex" justifyContent="space-between">
+
+          <Box
+            display="flex"
+            flexDirection={["column", "column", "row"]}
+            justifyContent="space-between"
+            paddingTop="4"
+          >
             <Box>
-              <Text paddingTop="4" fontSize="14px">
+              <Text
+                fontWeight={["700", "700", "normal"]}
+                paddingTop={["2", "2", "4"]}
+                fontSize="14px"
+              >
                 Have any questions?
               </Text>
               <Text
@@ -430,13 +480,26 @@ export default function Home() {
                 fontWeight="400"
                 color="orangeBrand.100"
                 fontSize="14px"
+                fontWeight={["500", "500", "normal"]}
               >
                 + 123 456 789
               </Text>
             </Box>
-            <ButtonGroup variant="outline" spacing="6" paddingTop="4">
-              <Button colorScheme="cyan">CONTACT</Button>
-            </ButtonGroup>
+            <Box>
+              <ButtonGroup
+                variant="outline"
+                spacing="6"
+                paddingTop={["6", "6", "4"]}
+              >
+                <Button
+                  paddingX={["30px", "30px", "16px"]}
+                  paddingY={["10px", "10px", "none"]}
+                  colorScheme="cyan"
+                >
+                  <Text fontSize={["14px", "14px", "16px"]}>CONTACT</Text>
+                </Button>
+              </ButtonGroup>
+            </Box>
           </Box>
         </Box>
       </Box>
