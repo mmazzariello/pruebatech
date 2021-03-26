@@ -360,7 +360,6 @@ export default function Home() {
       <Box display={["block", "block", "none", "none"]}>
         <Box
           display="flex"
-          className="border2"
           justifyContent="space-between"
           alignItems="center"
           marginTop="10"
@@ -386,10 +385,9 @@ export default function Home() {
       </Box>
 
       <Box marginX={["5", "5", "5", "20"]} marginY="10">
-        <Box display={["none", "none", "block", "block"]} className="border">
+        <Box display={["none", "none", "block", "block"]}>
           <Box
             display="flex"
-            className="border2"
             justifyContent="space-between"
             alignItems="center"
           >
