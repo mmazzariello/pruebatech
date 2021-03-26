@@ -9,6 +9,7 @@ import { Input } from "@chakra-ui/react";
 import { CategoryBox } from "components/CategoryBox";
 import { Carousel } from "components/Carousel";
 import { CarouselBlog } from "components/CarouselBlog";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -352,27 +353,19 @@ export default function Home() {
         >
           Top 10 Products
         </Text>
+
         <Carousel></Carousel>
       </Box>
 
       <Box display={["block", "block", "none", "none"]}>
-        <Text
-          marginX={["5", "5", "20", "20"]}
+        <Box
+          display="flex"
+          className="border2"
+          justifyContent="space-between"
+          alignItems="center"
           marginTop="10"
-          color={["mediumGray.50", "#000000"]}
-          fontWeight="700"
-          fontSize={["18", "18", "30", "30"]}
+          marginX={["5", "5", "20", "20"]}
         >
-          Blog Posts
-        </Text>
-
-        <Box>
-          <CarouselBlog />
-        </Box>
-      </Box>
-
-      <Box marginX="20" marginY="10">
-        <Box display={["none", "none", "block", "block"]}>
           <Text
             color={["mediumGray.50", "#000000"]}
             fontWeight="700"
@@ -380,6 +373,40 @@ export default function Home() {
           >
             Blog Posts
           </Text>
+          <Link href="/posts">
+            <Text color="blueBrand.100" fontSize="md" fontWeight="400">
+              + View All
+            </Text>
+          </Link>
+        </Box>
+
+        <Box>
+          <CarouselBlog />
+        </Box>
+      </Box>
+
+      <Box marginX={["5", "5", "5", "20"]} marginY="10">
+        <Box display={["none", "none", "block", "block"]} className="border">
+          <Box
+            display="flex"
+            className="border2"
+            justifyContent="space-between"
+            alignItems="center"
+          >
+            <Text
+              color={["mediumGray.50", "#000000"]}
+              fontWeight="700"
+              fontSize={["18", "18", "30", "30"]}
+            >
+              Blog Posts
+            </Text>
+
+            <Link href="/posts">
+              <Text color="blueBrand.100" fontSize="md" fontWeight="400">
+                + View All
+              </Text>
+            </Link>
+          </Box>
 
           <Box
             display="flex"

@@ -38,7 +38,7 @@ export const Carousel = () => {
       >
         <Box
           display="flex"
-          marginLeft={["5", "5", "20"]}
+          marginLeft={["5", "5", "5", "20"]}
           paddingY={["none", "none", "8"]}
         >
           <Box
