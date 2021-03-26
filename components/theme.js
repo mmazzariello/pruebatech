@@ -23,6 +23,14 @@ const colors = {
   },
 };
 
-const theme = extendTheme({ colors });
+const styles = {
+  global: {
+    "html, body": {
+      fontFamily: "Mulish, Helvetica, Arial, sans-serif",
+    },
+  },
+};
+
+const theme = extendTheme({ colors, styles });
 
 export { theme };

@@ -373,7 +373,12 @@ export default function Home() {
             Blog Posts
           </Text>
           <Link href="/posts">
-            <Text color="blueBrand.100" fontSize="md" fontWeight="400">
+            <Text
+              cursor="pointer"
+              color="blueBrand.100"
+              fontSize="md"
+              fontWeight="400"
+            >
               + View All
             </Text>
           </Link>
@@ -400,7 +405,12 @@ export default function Home() {
             </Text>
 
             <Link href="/posts">
-              <Text color="blueBrand.100" fontSize="md" fontWeight="400">
+              <Text
+                cursor="pointer"
+                color="blueBrand.100"
+                fontSize="md"
+                fontWeight="400"
+              >
                 + View All
               </Text>
             </Link>
@@ -527,7 +537,12 @@ export default function Home() {
             flexDirection={["column", "row"]}
             marginX={["5", "5", "20", "20"]}
           >
-            <Box height="65px" width={["55px", "55px", "65px"]}>
+            <Box
+              height="65px"
+              width={["55px", "55px", "105px", "85px"]}
+              marginRight={["none", "none", "45px"]}
+              marginTop={["none", "none", "14px"]}
+            >
               <img src="/img/newsletter.svg" alt="" />
             </Box>
             <Box maxWidth="600px" color="#FFFFFF" paddingTop={["1", "none"]}>
