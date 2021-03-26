@@ -32,6 +32,7 @@ export default function Home() {
           background="url('img/head.svg')"
           backgroundSize="cover"
           height="400px"
+          backgroundPosition="46% 30%"
         >
           <Box
             marginX={["5", "5", "5", "20"]}
@@ -57,6 +58,7 @@ export default function Home() {
               marginTop={["4px"]}
               paddingBottom={["12", "12", "none"]}
               decoration="underline"
+              cursor="pointer"
             >
               Discover now
             </Text>
@@ -66,7 +68,6 @@ export default function Home() {
 
       <Box>
         <Box
-          // display={["none", "none", "none", "block"]}
           paddingLeft="6"
           paddingRight="4"
           paddingTop="14"
@@ -76,6 +77,7 @@ export default function Home() {
           marginX={["5", "5", "5", "20"]}
           borderRadius="2xl"
           background="url('img/products.svg')"
+          backgroundPosition={["60% 70%", "70% 50%", "70% 50%", "70% 100%"]}
         >
           <Text
             display={["block", "block", "none", "none"]}
@@ -443,7 +445,12 @@ export default function Home() {
                 marginTop="4"
               ></Box>
               <Box paddingTop="4">
-                <Text marginTop="1.5" fontWeight="700" fontSize="18px">
+                <Text
+                  cursor="pointer"
+                  marginTop="1.5"
+                  fontWeight="700"
+                  fontSize="18px"
+                >
                   Blog Post publication 1
                 </Text>
                 <Text fontWeight="400" fontSize="14px" color="mediumGray.50">
@@ -465,8 +472,13 @@ export default function Home() {
                 ></Box>
 
                 <Box paddingTop="4">
-                  <Text marginTop="1.5" fontWeight="700" fontSize="18px">
-                    Blog Post publication 1
+                  <Text
+                    cursor="pointer"
+                    marginTop="1.5"
+                    fontWeight="700"
+                    fontSize="18px"
+                  >
+                    Blog Post publication 2
                   </Text>
                   <Text fontWeight="400" fontSize="14px" color="mediumGray.50">
                     Author
@@ -488,8 +500,13 @@ export default function Home() {
                 ></Box>
 
                 <Box paddingTop="4">
-                  <Text marginTop="1.5" fontWeight="700" fontSize="18px">
-                    Blog Post publication 1
+                  <Text
+                    cursor="pointer"
+                    marginTop="1.5"
+                    fontWeight="700"
+                    fontSize="18px"
+                  >
+                    Blog Post publication 3
                   </Text>
                   <Text fontWeight="400" fontSize="14px" color="mediumGray.50">
                     Author
@@ -506,6 +523,7 @@ export default function Home() {
           background="url('img/footer.svg')"
           backgroundSize="cover"
           height="250px"
+          backgroundPosition={["75% 10%", "46% 0%", "46% 0%", "0% 0%"]}
         >
           <Box
             color="white"
@@ -628,11 +646,21 @@ export default function Home() {
             display="flex"
             justifyContent="space-between"
           >
-            <img width="50px" src="/img/youtube.svg" alt="" />
-            <img width="50px" src="/img/linkedin.svg" alt="" />
-            <img width="50px" src="/img/twitter.svg" alt="" />
-            <img width="50px" src="/img/facebook.svg" alt="" />
-            <img width="50px" src="/img/instagram.svg" alt="" />
+            <Text cursor="pointer">
+              <img width="50px" src="/img/youtube.svg" alt="" />
+            </Text>
+            <Text cursor="pointer">
+              <img width="50px" src="/img/linkedin.svg" alt="" />
+            </Text>
+            <Text cursor="pointer">
+              <img width="50px" src="/img/twitter.svg" alt="" />
+            </Text>
+            <Text cursor="pointer">
+              <img width="50px" src="/img/facebook.svg" alt="" />
+            </Text>
+            <Text cursor="pointer">
+              <img width="50px" src="/img/instagram.svg" alt="" />
+            </Text>
           </Box>
         </Box>
 
@@ -783,7 +811,6 @@ export default function Home() {
         ></Box>
         <Box marginX={["5", "5", "16", "20"]}>
           <Box
-            className="border"
             display="flex"
             flexDirection={[
               "column-reverse",
@@ -794,8 +821,8 @@ export default function Home() {
             justifyContent={["none", "none", "none", "space-between"]}
             paddingY="4"
           >
-            <Box className="border2" display="flex" alignItems="center">
-              <Text paddingTop={["4", "4", "4", "none"]}>
+            <Box display="flex" alignItems="center">
+              <Text paddingTop={["4", "4", "4", 0]}>
                 Daitool - © 2021 All Rights Reserved
               </Text>
             </Box>
@@ -805,7 +832,7 @@ export default function Home() {
               borderColor="gray.200"
             ></Box>
 
-            <Box className="border3" display="flex" alignContent="center">
+            <Box display="flex" alignContent="center">
               <Text
                 display={["none", "none", "none", "block"]}
                 paddingRight="6"
