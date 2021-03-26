@@ -595,15 +595,15 @@ export default function Home() {
       <Box
         marginX={["5", "5", "16", "16"]}
         display="flex"
-        flexDirection={["column", "column", "row"]}
+        flexDirection={["column", "column", "column", "row"]}
         justifyContent="space-between"
         paddingTop="14"
-        paddingBottom={["8", "8", "60px"]}
+        paddingBottom={["8", "8", "8", "60px"]}
       >
-        <Box className="border2" maxWidth={["97%", "97%", "320px", "280px"]}>
+        <Box maxWidth={["97%", "97%", "100%", "280px"]}>
           <img width="140px" src="img/daitoolblack.svg" alt="" />
           <Text
-            marginTop={["4", "4", "8"]}
+            marginTop={["4", "4", "4", "8"]}
             fontWeight="400"
             fontSize="14px"
             color="#232323"
@@ -613,7 +613,7 @@ export default function Home() {
             better, anywhere in the world.
           </Text>
           <Box
-            maxWidth={["none", "none", "300px"]}
+            maxWidth={["none", "none", "none", "300px"]}
             marginTop={["9", "9", "6"]}
             display="flex"
             justifyContent="space-between"
@@ -627,11 +627,10 @@ export default function Home() {
         </Box>
 
         <Box
-          className="border"
-          display={["block", "block", "none", "none"]}
+          display={["block", "block", "block", "none"]}
           display="flex"
           justifyContent="space-between"
-          paddingTop={["8", "8", "0"]}
+          paddingTop={["8", "8", "8", "0"]}
           marginTop="4"
         >
           <Box marginRight="36px">
@@ -666,11 +665,47 @@ export default function Home() {
               <li className="footer-spacing">Privacy Policy</li>
             </ul>
           </Box>
+
+          <Box display={["none", "none", "block", "none"]}>
+            <Box>
+              <Text
+                fontWeight="700"
+                marginBottom={["4", "4", "8"]}
+                fontSize="16px"
+              >
+                HAVE ANY QUIESTIONS?{" "}
+              </Text>
+              <Text
+                paddingTop="1"
+                fontWeight="400"
+                color="orangeBrand.100"
+                fontSize="14px"
+                fontWeight={["500", "500", "normal"]}
+              >
+                + 123 456 789
+              </Text>
+            </Box>
+            <Box display={["none", "none", "block", "none"]}>
+              <ButtonGroup
+                variant="outline"
+                spacing="6"
+                paddingTop={["6", "6", "4"]}
+              >
+                <Button
+                  paddingX={["30px", "30px", "10px"]}
+                  paddingY={["10px", "10px", "none"]}
+                  colorScheme="cyan"
+                >
+                  <Text fontSize={["14px", "14px", "14px"]}>CONTACT</Text>
+                </Button>
+              </ButtonGroup>
+            </Box>
+          </Box>
         </Box>
 
         <Box maxWidth={["180px", "240px"]}>
           <Text
-            display={["none", "none", "block", "block"]}
+            display={["none", "none", "none", "block"]}
             fontWeight="700"
             marginBottom="8"
             marginTop="4"
@@ -679,7 +714,7 @@ export default function Home() {
             CONTACT
           </Text>
           <Text
-            display={["none", "none", "block", "block"]}
+            display={["none", "none", "none", "block"]}
             fontWeight="400"
             fontSize="14px"
           >
@@ -693,7 +728,7 @@ export default function Home() {
             justifyContent="space-between"
             paddingTop="4"
           >
-            <Box>
+            <Box display={["block", "block", "none", "block"]}>
               <Text
                 fontWeight={["700", "700", "normal"]}
                 paddingTop={["2", "2", "4"]}
@@ -711,7 +746,7 @@ export default function Home() {
                 + 123 456 789
               </Text>
             </Box>
-            <Box>
+            <Box display={["block", "block", "none", "block"]}>
               <ButtonGroup
                 variant="outline"
                 spacing="6"
