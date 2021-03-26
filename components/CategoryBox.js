@@ -7,8 +7,8 @@ export const CategoryBox = ({
 }) => {
   return (
     <Box
-      maxWidth="380px"
-      minWidth="300px"
+      maxWidth={["380px", "380px", "440px", "380px"]}
+      minWidth={["300px", "300px", "350px", "350px"]}
       background={`url('${url}')`}
       width="32%"
       height="130px"

@@ -104,11 +104,10 @@ export default function Home() {
       </Box>
 
       <Box
-        // className="border4"
         display="flex"
         flexWrap="wrap"
         justifyContent="space-around"
-        marginX={["5", "5", "20", "20"]}
+        marginX={["5", "5", "5", "20"]}
       >
         <CategoryBox title="Safety" url="img/safety.svg" />
         <CategoryBox title="Janitorial" url="img/janitorial.svg" />
@@ -130,7 +129,12 @@ export default function Home() {
           Our Brands
         </Text>
 
-        <Box display="flex" flexWrap="wrap" justifyContent="space-around">
+        <Box
+          display="flex"
+          flexWrap="wrap"
+          justifyContent="space-around"
+          marginTop="8"
+        >
           <Box
             fontSize="sm"
             width="120px"
@@ -139,6 +143,7 @@ export default function Home() {
             flexDirection="column"
             justifyContent="center"
             height="70px"
+            marginX="4"
           >
             <img src="/img/brands/pentrel.svg" alt="" />
           </Box>
@@ -150,6 +155,7 @@ export default function Home() {
             flexDirection="column"
             justifyContent="center"
             height="70px"
+            marginX="4"
           >
             <img src="/img/brands/vessel.svg" alt="" />
           </Box>
@@ -161,6 +167,7 @@ export default function Home() {
             flexDirection="column"
             justifyContent="center"
             height="70px"
+            marginX="4"
           >
             <img src="/img/brands/olfa.svg" alt="" />
           </Box>
@@ -172,6 +179,7 @@ export default function Home() {
             flexDirection="column"
             justifyContent="center"
             height="70px"
+            marginX="4"
           >
             <img src="/img/brands/anex.svg" alt="" />
           </Box>
@@ -183,6 +191,7 @@ export default function Home() {
             flexDirection="column"
             justifyContent="center"
             height="70px"
+            marginX="4"
           >
             <img src="/img/brands/mitutoyo.svg" alt="" />
           </Box>
@@ -194,6 +203,7 @@ export default function Home() {
             flexDirection="column"
             justifyContent="center"
             height="70px"
+            marginX="4"
           >
             <img src="/img/brands/toyo.svg" alt="" />
           </Box>
@@ -211,108 +221,123 @@ export default function Home() {
       >
         Daitool Promise
       </Text>
+
       <Box
         display="flex"
         flexWrap="wrap"
         justifyContent="space-around"
         marginX={["5", "5", "20", "20"]}
         marginTop="6"
+        marginBottom="10"
+        paddingBottom="4"
+        paddingX="4"
       >
-        <Box
-          borderRadius="base"
-          border="2px solid"
-          borderColor={["#FFFFFF", "#FFFFFF", "gray.100"]}
-          fontSize="sm"
-          width="120px"
-          textAlign="center"
-          display="flex"
-          flexDirection="column"
-          justifyContent="center"
-          height="70px"
-        >
-          <img src="/img/conversation.svg" alt="" />
-          <Text fontWeight="700">Efficient</Text>
-          <Text color="gray.400" fontSize="xx-small">
-            International Shipping
-          </Text>
+        <Box marginTop={["4", "none"]}>
+          <Box
+            borderRadius="base"
+            border="2px solid"
+            borderColor={["#FFFFFF", "#FFFFFF", "gray.100"]}
+            fontSize="sm"
+            width="120px"
+            textAlign="center"
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+            height="70px"
+          >
+            <img src="/img/conversation.svg" alt="" />
+            <Text fontWeight="700">Efficient</Text>
+            <Text color="gray.400" fontSize="xx-small">
+              International Shipping
+            </Text>
+          </Box>
         </Box>
-        <Box
-          borderRadius="base"
-          border="2px solid"
-          borderColor={["#FFFFFF", "#FFFFFF", "gray.100"]}
-          fontSize="sm"
-          width="120px"
-          textAlign="center"
-          display="flex"
-          flexDirection="column"
-          justifyContent="center"
-          height="70px"
-        >
-          <img src="/img/hight2.svg" alt="" />
 
-          <Text fontWeight="700">High-Quality</Text>
-          <Text color="gray.400" fontSize="xx-small">
-            Guaranteed
-          </Text>
-        </Box>
-        <Box
-          borderRadius="base"
-          border="2px solid"
-          borderColor={["#FFFFFF", "#FFFFFF", "gray.100"]}
-          fontSize="sm"
-          width="120px"
-          textAlign="center"
-          display="flex"
-          flexDirection="column"
-          justifyContent="center"
-          height="70px"
-          marginTop={["8", "none", "none", "none"]}
-        >
-          <img src="/img/hight.svg" alt="" />
+        <Box marginTop={["4", "none"]}>
+          <Box
+            borderRadius="base"
+            border="2px solid"
+            borderColor={["#FFFFFF", "#FFFFFF", "gray.100"]}
+            fontSize="sm"
+            width="120px"
+            textAlign="center"
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+            height="70px"
+          >
+            <img src="/img/hight2.svg" alt="" />
 
-          <Text fontWeight="700">Reliable</Text>
-          <Text color="gray.400" fontSize="xx-small">
-            from $40
-          </Text>
+            <Text fontWeight="700">High-Quality</Text>
+            <Text color="gray.400" fontSize="xx-small">
+              Guaranteed
+            </Text>
+          </Box>
         </Box>
-        <Box
-          borderRadius="base"
-          border="2px solid"
-          borderColor={["#FFFFFF", "#FFFFFF", "gray.100"]}
-          fontSize="sm"
-          width="120px"
-          textAlign="center"
-          display="flex"
-          flexDirection="column"
-          justifyContent="center"
-          height="70px"
-          marginTop={["8", "none", "none", "none"]}
-        >
-          <img src="/img/world.svg" alt="" />
 
-          <Text fontWeight="700">Global</Text>
-          <Text color="gray.400" fontSize="xx-small">
-            Ships to 50 countries
-          </Text>
+        <Box marginTop={["4", "none"]}>
+          <Box
+            borderRadius="base"
+            border="2px solid"
+            borderColor={["#FFFFFF", "#FFFFFF", "gray.100"]}
+            fontSize="sm"
+            width="120px"
+            textAlign="center"
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+            height="70px"
+          >
+            <img src="/img/hight.svg" alt="" />
+
+            <Text fontWeight="700">Reliable</Text>
+            <Text color="gray.400" fontSize="xx-small">
+              from $40
+            </Text>
+          </Box>
         </Box>
-        <Box
-          borderRadius="base"
-          border="2px solid"
-          borderColor={["#FFFFFF", "#FFFFFF", "gray.100"]}
-          fontSize="sm"
-          width="120px"
-          textAlign="center"
-          display="flex"
-          flexDirection="column"
-          justifyContent="center"
-          height="70px"
-          marginTop={["8", "none", "none", "none"]}
-        >
-          <img src="/img/avatar.svg" alt="" />
-          <Text fontWeight="700">Customer Focus</Text>
-          <Text color="gray.400" fontSize="xx-small">
-            from $40
-          </Text>
+
+        <Box marginTop={["4", "none"]}>
+          <Box
+            borderRadius="base"
+            border="2px solid"
+            borderColor={["#FFFFFF", "#FFFFFF", "gray.100"]}
+            fontSize="sm"
+            width="120px"
+            textAlign="center"
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+            height="70px"
+          >
+            <img src="/img/world.svg" alt="" />
+
+            <Text fontWeight="700">Global</Text>
+            <Text color="gray.400" fontSize="xx-small">
+              Ships to 50 countries
+            </Text>
+          </Box>
+        </Box>
+
+        <Box marginTop={["4", "none"]}>
+          <Box
+            borderRadius="base"
+            border="2px solid"
+            borderColor={["#FFFFFF", "#FFFFFF", "gray.100"]}
+            fontSize="sm"
+            width="120px"
+            textAlign="center"
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+            height="70px"
+          >
+            <img src="/img/avatar.svg" alt="" />
+            <Text fontWeight="700">Customer Focus</Text>
+            <Text color="gray.400" fontSize="xx-small">
+              from $40
+            </Text>
+          </Box>
         </Box>
       </Box>
 

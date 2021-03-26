@@ -30,20 +30,26 @@ export const Carousel = () => {
       : 4;
 
   return (
-    <Box>
+    <Box backgroundColor={["none", "none", "#F9F9FB"]}>
       <CarouselProvider
         isIntrinsicHeight
         totalSlides={14}
         visibleSlides={visibleSlides}
       >
-        <Box display="flex">
+        <Box
+          display="flex"
+          marginLeft={["5", "5", "20"]}
+          paddingY={["none", "none", "8"]}
+        >
           <Box
             display={["none", "none", "block"]}
             paddingY="20px"
             paddingX="10"
             marginRight="10"
           >
-            <Heading fontSize="md">This week top 10 selected products</Heading>
+            <Heading minWidth="100px" fontSize="md">
+              This Weeks Top 10 Selected Products
+            </Heading>
             <Box display="flex">
               <ButtonBack>
                 <IconButton
@@ -59,15 +65,17 @@ export const Carousel = () => {
                   isRound
                   variant="ghost"
                   icon={<BiChevronRightCircle size="20px" />}
+                  color="orangeBrand.100"
                 />
               </ButtonNext>
             </Box>
           </Box>
+
           <Slider>
             {[...Array(14).keys()].map((index) => {
               return (
                 <Slide key={index} index={index}>
-                  <Box paddingX={["1", "1", "5"]}>
+                  <Box paddingX={["1", "1", "4"]}>
                     <ProductCard title={`Product ${index}`} />
                   </Box>
                 </Slide>
@@ -93,6 +101,7 @@ const ProductCard = ({
       borderRadius="lg"
       padding={["2", "2", "4"]}
       width="100%"
+      backgroundColor="#FFFFFF"
     >
       <Image src={url} />
       <Box marginTop="2" />
@@ -119,7 +128,7 @@ const ProductCard = ({
           {originalPrice}
         </Text>
         <Box flexGrow={1} />
-        <Box display={["none", "none", "block", "block"]}>
+        <Box display={["none", "none", "none", "block"]}>
           <Box display="flex" fontSize="xs">
             <AiFillStar />
             <AiFillStar />
