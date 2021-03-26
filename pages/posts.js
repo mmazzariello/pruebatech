@@ -32,6 +32,19 @@ const posts = () => {
           >
             Blog Posts
           </Text>
+          <Text
+            display={["none", "none", "block"]}
+            color={["mediumGray.50", "#000000"]}
+            fontWeight="700"
+            fontSize={["18", "18", "28", "28"]}
+            color="cyan.400"
+          >
+            Quiero sumarme a la tripulación de Rocket Digital!!
+          </Text>
+          <Text fontWeight="400" fontSize="14px" color="mediumGray.50">
+            Quiero seguir desarrollandome! si me dan esta oportunidad, prometo
+            dar lo mejor de mi en este equipo.
+          </Text>
 
           <Box
             display="flex"
