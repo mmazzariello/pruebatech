@@ -593,14 +593,14 @@ export default function Home() {
       </Box>
 
       <Box
-        marginX={["5", "5", "20", "20"]}
+        marginX={["5", "5", "16", "16"]}
         display="flex"
         flexDirection={["column", "column", "row"]}
         justifyContent="space-between"
         paddingTop="14"
-        paddingBottom={["8", "8", "32"]}
+        paddingBottom={["8", "8", "60px"]}
       >
-        <Box maxWidth={["97%", "97%", "320px"]}>
+        <Box className="border2" maxWidth={["97%", "97%", "320px", "280px"]}>
           <img width="140px" src="img/daitoolblack.svg" alt="" />
           <Text
             marginTop={["4", "4", "8"]}
@@ -627,17 +627,18 @@ export default function Home() {
         </Box>
 
         <Box
+          className="border"
           display={["block", "block", "none", "none"]}
           display="flex"
           justifyContent="space-between"
           paddingTop={["8", "8", "0"]}
           marginTop="4"
         >
-          <Box>
+          <Box marginRight="36px">
             <Text
               fontWeight="700"
               marginBottom={["4", "4", "8"]}
-              fontSize="20px"
+              fontSize="16px"
             >
               QUICK LINKS
             </Text>
@@ -653,7 +654,7 @@ export default function Home() {
             <Text
               fontWeight="700"
               marginBottom={["4", "4", "8"]}
-              fontSize="20px"
+              fontSize="16px"
             >
               CUSTOMER AREA
             </Text>
@@ -667,13 +668,13 @@ export default function Home() {
           </Box>
         </Box>
 
-        <Box maxWidth="280px">
+        <Box maxWidth={["180px", "240px"]}>
           <Text
             display={["none", "none", "block", "block"]}
             fontWeight="700"
             marginBottom="8"
             marginTop="4"
-            fontSize="20px"
+            fontSize="16px"
           >
             CONTACT
           </Text>
@@ -717,11 +718,11 @@ export default function Home() {
                 paddingTop={["6", "6", "4"]}
               >
                 <Button
-                  paddingX={["30px", "30px", "16px"]}
+                  paddingX={["30px", "30px", "10px"]}
                   paddingY={["10px", "10px", "none"]}
                   colorScheme="cyan"
                 >
-                  <Text fontSize={["14px", "14px", "16px"]}>CONTACT</Text>
+                  <Text fontSize={["14px", "14px", "14px"]}>CONTACT</Text>
                 </Button>
               </ButtonGroup>
             </Box>
