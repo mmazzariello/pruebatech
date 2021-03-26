@@ -11,6 +11,7 @@ const colors = {
   orangeBrand: {
     50: "rgba(255, 135, 23, 0.65)",
     100: "#FF723D",
+    200: "#FF4B4B",
   },
   blueBrand: {
     100: "#92D2D9",

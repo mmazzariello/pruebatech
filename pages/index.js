@@ -246,7 +246,9 @@ export default function Home() {
             justifyContent="center"
             height="70px"
           >
-            <img src="/img/conversation.svg" alt="" />
+            <Box marginTop="-25px" display="flex" justifyContent="center">
+              <img src="/img/conversation.svg" alt="" />
+            </Box>
             <Text fontWeight="700">Efficient</Text>
             <Text color="gray.400" fontSize="xx-small">
               International Shipping
@@ -267,7 +269,9 @@ export default function Home() {
             justifyContent="center"
             height="70px"
           >
-            <img src="/img/hight2.svg" alt="" />
+            <Box marginTop="-25px" display="flex" justifyContent="center">
+              <img src="/img/hight2.svg" alt="" />
+            </Box>
 
             <Text fontWeight="700">High-Quality</Text>
             <Text color="gray.400" fontSize="xx-small">
@@ -289,7 +293,9 @@ export default function Home() {
             justifyContent="center"
             height="70px"
           >
-            <img src="/img/hight.svg" alt="" />
+            <Box marginTop="-25px" display="flex" justifyContent="center">
+              <img src="/img/hight.svg" alt="" />
+            </Box>
 
             <Text fontWeight="700">Reliable</Text>
             <Text color="gray.400" fontSize="xx-small">
@@ -311,7 +317,9 @@ export default function Home() {
             justifyContent="center"
             height="70px"
           >
-            <img src="/img/world.svg" alt="" />
+            <Box marginTop="-25px" display="flex" justifyContent="center">
+              <img src="/img/world.svg" alt="" />
+            </Box>
 
             <Text fontWeight="700">Global</Text>
             <Text color="gray.400" fontSize="xx-small">
@@ -333,7 +341,9 @@ export default function Home() {
             justifyContent="center"
             height="70px"
           >
-            <img src="/img/avatar.svg" alt="" />
+            <Box marginTop="-25px" display="flex" justifyContent="center">
+              <img src="/img/avatar.svg" alt="" />
+            </Box>
             <Text fontWeight="700">Customer Focus</Text>
             <Text color="gray.400" fontSize="xx-small">
               from $40
@@ -614,7 +624,7 @@ export default function Home() {
           </Text>
           <Box
             maxWidth={["none", "none", "none", "300px"]}
-            marginTop={["9", "9", "6"]}
+            marginTop={["9", "9", "8", "6"]}
             display="flex"
             justifyContent="space-between"
           >
@@ -766,28 +776,36 @@ export default function Home() {
       </Box>
 
       <footer>
-        <Box marginX={["5", "5", "20", "20"]}>
+        <Box
+          display={["none", "none", "none", "block"]}
+          borderTop="1px solid"
+          borderColor="gray.200"
+        ></Box>
+        <Box marginX={["5", "5", "16", "20"]}>
           <Box
-            display={["none", "none", "block", "block"]}
-            borderTop="1px solid"
-            borderColor="gray.200"
-          ></Box>
-
-          <Box
+            className="border"
             display="flex"
-            flexDirection={["column-reverse", "column-reverse", "row", "row"]}
-            justifyContent={["none", "none", "space-between"]}
+            flexDirection={[
+              "column-reverse",
+              "column-reverse",
+              "column-reverse",
+              "row",
+            ]}
+            justifyContent={["none", "none", "none", "space-between"]}
             paddingY="4"
           >
-            <Text paddingTop="4">Daitool - © 2021 All Rights Reserved</Text>
-
+            <Box className="border2" display="flex" alignItems="center">
+              <Text paddingTop={["4", "4", "4", "none"]}>
+                Daitool - © 2021 All Rights Reserved
+              </Text>
+            </Box>
             <Box
-              display={["block", "block", "none", "none"]}
+              display={["block", "block", "block", "none"]}
               borderTop="1px solid"
               borderColor="gray.200"
             ></Box>
 
-            <Box display="flex">
+            <Box className="border3" display="flex" alignContent="center">
               <Text
                 display={["none", "none", "none", "block"]}
                 paddingRight="6"
@@ -800,16 +818,16 @@ export default function Home() {
                 fontSize={["16px", "16px", "18px"]}
                 display="flex"
                 flexDirection="row"
-                paddingBottom={["4", "4", "0"]}
+                paddingBottom={["4", "4", "4", "0"]}
               >
-                <Text color="blueBrand.200" paddingLeft={["0", "0", "4"]}>
+                <Text color="blueBrand.200" paddingLeft={["0", "0", "0", "4"]}>
                   VISA
                 </Text>
                 <Box paddingX="4">
-                  <Text as="span" color="red.300">
+                  <Text as="span" color="orangeBrand.200">
                     MASTER
                   </Text>
-                  <Text as="span" color="yellow.600">
+                  <Text as="span" color="orangeBrand.50">
                     CARD
                   </Text>
                 </Box>
